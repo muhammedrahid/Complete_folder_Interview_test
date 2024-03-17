@@ -1,0 +1,79 @@
+2024-03-17 12:29:22,610 DEBUG cd assessment_test && python3 -m venv env
+2024-03-17 12:29:28,513 DEBUG cd assessment_test && /home/muhammedrahidvk/Documents/assessment_test/env/bin/python -m pip install --quiet --upgrade pip
+2024-03-17 12:29:32,518 DEBUG cd assessment_test && /home/muhammedrahidvk/Documents/assessment_test/env/bin/python -m pip install --quiet wheel
+2024-03-17 12:29:35,611 LOG Getting frappe
+2024-03-17 12:29:35,611 DEBUG cd assessment_test/apps && git clone https://github.com/frappe/frappe.git --branch version-14 --depth 1 --origin upstream
+2024-03-17 12:29:54,326 LOG Installing frappe
+2024-03-17 12:29:54,326 DEBUG cd /home/muhammedrahidvk/Documents/assessment_test && /home/muhammedrahidvk/Documents/assessment_test/env/bin/python -m pip install --quiet --upgrade -e /home/muhammedrahidvk/Documents/assessment_test/apps/frappe 
+2024-03-17 12:30:49,918 DEBUG cd /home/muhammedrahidvk/Documents/assessment_test/apps/frappe && yarn install
+2024-03-17 12:31:00,378 WARNING restart failed: Couldn't find supervisorctl in PATH
+2024-03-17 12:31:00,378 DEBUG cd assessment_test && bench build
+2024-03-17 12:31:00,563 INFO /usr/local/bin/bench build
+2024-03-17 12:31:27,854 LOG setting up backups
+2024-03-17 12:31:27,871 LOG backups were set up
+2024-03-17 12:31:27,871 INFO Bench assessment_test initialized
+2024-03-17 12:31:28,414 INFO A newer version of bench is available: 5.16.2 → 5.22.3
+2024-03-17 12:31:52,100 INFO /usr/local/bin/bench new-site test.site
+2024-03-17 12:33:44,837 INFO /usr/local/bin/bench get-app --branch version-14 erpnext
+2024-03-17 12:33:45,760 LOG Getting erpnext
+2024-03-17 12:33:45,761 DEBUG cd ./apps && git clone https://github.com/frappe/erpnext.git --branch version-14 --depth 1 --origin upstream
+2024-03-17 12:34:14,443 LOG Installing erpnext
+2024-03-17 12:34:14,644 DEBUG cd /home/muhammedrahidvk/Documents/assessment_test && /home/muhammedrahidvk/Documents/assessment_test/env/bin/python -m pip install --quiet --upgrade -e /home/muhammedrahidvk/Documents/assessment_test/apps/erpnext 
+2024-03-17 12:34:28,887 DEBUG cd /home/muhammedrahidvk/Documents/assessment_test/apps/erpnext && yarn install
+2024-03-17 12:34:29,774 DEBUG bench build --app erpnext
+2024-03-17 12:34:29,958 INFO /usr/local/bin/bench build --app erpnext
+2024-03-17 12:34:38,701 WARNING restart failed: Couldn't find supervisorctl in PATH
+2024-03-17 12:34:39,094 INFO A newer version of bench is available: 5.16.2 → 5.22.3
+2024-03-17 12:35:02,371 INFO /usr/local/bin/bench --site test.site install-app erpnext
+2024-03-17 12:45:31,905 INFO /usr/local/bin/bench get-app hrms
+2024-03-17 12:45:32,670 LOG Getting hrms
+2024-03-17 12:45:32,670 DEBUG cd ./apps && git clone https://github.com/frappe/hrms.git  --depth 1 --origin upstream
+2024-03-17 12:45:46,270 LOG Installing hrms
+2024-03-17 12:45:46,526 DEBUG cd /home/muhammedrahidvk/Documents/assessment_test && /home/muhammedrahidvk/Documents/assessment_test/env/bin/python -m pip install --quiet --upgrade -e /home/muhammedrahidvk/Documents/assessment_test/apps/hrms 
+2024-03-17 12:45:51,180 DEBUG cd /home/muhammedrahidvk/Documents/assessment_test/apps/hrms && yarn install
+2024-03-17 12:46:05,070 DEBUG bench build --app hrms
+2024-03-17 12:46:05,256 INFO /usr/local/bin/bench build --app hrms
+2024-03-17 12:46:29,559 WARNING restart failed: Couldn't find supervisorctl in PATH
+2024-03-17 12:46:29,843 INFO A newer version of bench is available: 5.16.2 → 5.22.3
+2024-03-17 12:47:14,689 INFO /usr/local/bin/bench start
+2024-03-17 12:47:15,225 INFO /usr/local/bin/bench worker
+2024-03-17 12:47:15,236 INFO /usr/local/bin/bench watch
+2024-03-17 12:47:15,313 INFO /usr/local/bin/bench serve --port 8016
+2024-03-17 12:47:15,330 INFO /usr/local/bin/bench schedule
+2024-03-17 12:47:33,736 INFO /usr/local/bin/bench --site test.site install-app hrms
+2024-03-17 12:49:43,822 INFO /usr/local/bin/bench new-app assessment_test
+2024-03-17 12:49:43,830 LOG creating new app assessment_test
+2024-03-17 12:51:08,277 LOG Installing assessment_test
+2024-03-17 12:51:08,279 DEBUG cd /home/muhammedrahidvk/Documents/assessment_test && /home/muhammedrahidvk/Documents/assessment_test/env/bin/python -m pip install --quiet --upgrade -e /home/muhammedrahidvk/Documents/assessment_test/apps/assessment_test 
+2024-03-17 12:51:12,990 DEBUG bench build --app assessment_test
+2024-03-17 12:51:13,187 INFO /usr/local/bin/bench build --app assessment_test
+2024-03-17 12:51:16,424 WARNING restart failed: Couldn't find supervisorctl in PATH
+2024-03-17 12:51:16,855 INFO A newer version of bench is available: 5.16.2 → 5.22.3
+2024-03-17 12:51:44,615 INFO /usr/local/bin/bench --site test.site install-app assessment_test
+2024-03-17 12:52:25,900 INFO /usr/local/bin/bench --site test.site add-to-hosts
+2024-03-17 12:52:43,242 INFO /usr/local/bin/bench start
+2024-03-17 12:52:43,731 INFO /usr/local/bin/bench serve --port 8016
+2024-03-17 12:52:43,773 INFO /usr/local/bin/bench watch
+2024-03-17 12:52:43,778 INFO /usr/local/bin/bench worker
+2024-03-17 12:52:43,806 INFO /usr/local/bin/bench schedule
+2024-03-17 13:06:21,358 INFO /usr/local/bin/bench start
+2024-03-17 13:06:22,019 INFO /usr/local/bin/bench serve --port 8016
+2024-03-17 13:06:22,023 INFO /usr/local/bin/bench schedule
+2024-03-17 13:06:22,025 INFO /usr/local/bin/bench watch
+2024-03-17 13:06:22,031 INFO /usr/local/bin/bench worker
+2024-03-17 13:28:03,947 INFO /usr/local/bin/bench start
+2024-03-17 13:28:04,491 INFO /usr/local/bin/bench serve --port 8016
+2024-03-17 13:28:04,496 INFO /usr/local/bin/bench schedule
+2024-03-17 13:28:04,500 INFO /usr/local/bin/bench worker
+2024-03-17 13:28:04,574 INFO /usr/local/bin/bench watch
+2024-03-17 13:35:25,813 INFO /usr/local/bin/bench start
+2024-03-17 13:35:26,419 INFO /usr/local/bin/bench worker
+2024-03-17 13:35:26,435 INFO /usr/local/bin/bench serve --port 8016
+2024-03-17 13:35:26,438 INFO /usr/local/bin/bench schedule
+2024-03-17 13:35:26,451 INFO /usr/local/bin/bench watch
+2024-03-17 13:44:49,937 INFO /usr/local/bin/bench start
+2024-03-17 13:44:50,519 INFO /usr/local/bin/bench schedule
+2024-03-17 13:44:50,529 INFO /usr/local/bin/bench worker
+2024-03-17 13:44:50,541 INFO /usr/local/bin/bench serve --port 8016
+2024-03-17 13:44:50,543 INFO /usr/local/bin/bench watch
+2024-03-17 18:00:02,829 INFO /usr/local/bin/bench --verbose --site all backup
